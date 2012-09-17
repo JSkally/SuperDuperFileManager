@@ -5,15 +5,15 @@
 
 import hashlib
 
-def md5Checksum(filePath):
+def hashFile(filePath):
     fh = open(filePath, 'rb')
-    m = hashlib.md5()
+    m = hashlib.sha1()
     while True:
         data = fh.read(8192)
         if not data:
             break
-        m.update(data)
-    return m.hexdigest()
+        sha1.update(data)
+    return sha1.hexdigest()
 
 #just to see
-print 'The MD5 checksum of text.txt is', md5Checksum('test.txt')
+print 'The sha1 checksum of text.txt is', hashFile('test.txt')
