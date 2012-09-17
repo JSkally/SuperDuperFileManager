@@ -17,3 +17,5 @@ def hashFile(filePath):
 
 #just to see
 print 'The sha1 checksum of text.txt is', hashFile('test.txt')
+
+#gaza again
