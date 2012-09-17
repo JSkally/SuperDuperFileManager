@@ -12,7 +12,7 @@ def hashFile(filePath):
         data = fh.read(8192)
         if not data:
             break
-        sha1.update(data)
+            sha1.update(data)
     return sha1.hexdigest()
 
 #just to see
