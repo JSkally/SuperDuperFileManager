@@ -15,4 +15,5 @@ def md5Checksum(filePath):
         m.update(data)
     return m.hexdigest()
 
+#just to see
 print 'The MD5 checksum of text.txt is', md5Checksum('test.txt')
